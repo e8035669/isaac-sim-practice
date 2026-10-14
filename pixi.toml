@@ -1,0 +1,64 @@
+[workspace]
+authors = ["Jeff Zhang <e8035669@gmail.com>"]
+channels = ["conda-forge", "robostack-jazzy"]
+name = "isaac-sim-proj2"
+platforms = [{ name = "linux-64-glibc-2-35", platform = "linux-64", glibc = "2.35" }]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+ros-jazzy-ur-description = ">=3.5.1,<4"
+ros-jazzy-turtlesim = ">=1.8.4,<2"
+ros-jazzy-desktop = ">=0.11.0,<0.12"
+ros-jazzy-xacro = ">=2.1.1,<3"
+
+setuptools = "<82"
+psutil = "==5.9.8"
+aiohttp = "==3.14.1"
+multidict = "==6.1.0"
+wrapt = "==1.16.0"
+aiohappyeyeballs = "==2.6.1"
+attrs = "==25.1.0"
+frozenlist = "==1.5.0"
+propcache = "==0.2.1"
+yarl = "==1.18.3"
+idna = "==3.10"
+numpy = "==2.3.1"
+cryptography = "==50.0.1"
+packaging = "==26.0"
+kiwisolver = "==1.4.9"
+pyparsing = "==3.3.2"
+fonttools = "==4.61.1"
+contourpy = "==1.3.3"
+matplotlib = "==3.10.8"
+
+[activation]
+scripts = ["scripts/stage-libxml2-legacy.sh"]
+
+[activation.env]
+RMW_IMPLEMENTATION = "rmw_fastrtps_cpp"
+__NV_PRIME_RENDER_OFFLOAD = "1"
+__GLX_VENDOR_LIBRARY_NAME = "nvidia"
+LD_LIBRARY_PATH = "$CONDA_PREFIX/lib/python3.12/site-packages/isaacsim/exts/isaacsim.ros2.core/jazzy/lib:$PIXI_PROJECT_ROOT/.pixi/xml2-legacy-libs:$LD_LIBRARY_PATH"
+QT_QPA_PLATFORM = "xcb"
+
+[feature.xml2-legacy.dependencies]
+libxml2 = "2.13.*"
+
+[environments]
+xml2-legacy = { features = ["xml2-legacy"], no-default-feature = true }
+
+[pypi-options]
+prerelease-mode = "allow"
+
+[pypi-options.dependency-overrides]
+opencv-python-headless-noffmpeg = ">=4.14"
+
+[workspace.conda-pypi-map]
+conda-forge = { mapping = { py-opencv = ["opencv-python", "opencv-python-headless", "opencv-python-headless-noffmpeg"] } }
+
+[pypi-dependencies]
+isaacsim = { version = "==6.1.0.0", extras = ["all", "extscache"], index = "https://pypi.nvidia.com" }
+torch = { version = "==2.11.0", index = "https://download.pytorch.org/whl/cu128" }
