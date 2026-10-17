@@ -16,7 +16,7 @@ ros-jazzy-xacro = ">=2.1.1,<3"
 
 setuptools = "<82"
 psutil = "==5.9.8"
-aiohttp = "==3.14.1"
+aiohttp = "==3.14.3"
 multidict = "==6.1.0"
 wrapt = "==1.16.0"
 aiohappyeyeballs = "==2.6.1"
@@ -60,5 +60,5 @@ opencv-python-headless-noffmpeg = ">=4.14"
 conda-forge = { mapping = { py-opencv = ["opencv-python", "opencv-python-headless", "opencv-python-headless-noffmpeg"] } }
 
 [pypi-dependencies]
-isaacsim = { version = "==6.1.0.0", extras = ["all", "extscache"], index = "https://pypi.nvidia.com" }
+isaacsim = { version = "==6.2.0.0", extras = ["all", "extscache"], index = "https://pypi.nvidia.com" }
 torch = { version = "==2.11.0", index = "https://download.pytorch.org/whl/cu128" }
