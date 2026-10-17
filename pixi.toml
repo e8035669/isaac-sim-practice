@@ -14,6 +14,7 @@ ros-jazzy-turtlesim = ">=1.8.4,<2"
 ros-jazzy-desktop = ">=0.11.0,<0.12"
 ros-jazzy-xacro = ">=2.1.1,<3"
 
+# 以下套件為了配合isaacsim解析而釘選
 setuptools = "<82"
 psutil = "==5.9.8"
 aiohttp = "==3.14.3"
@@ -44,6 +45,7 @@ __GLX_VENDOR_LIBRARY_NAME = "nvidia"
 LD_LIBRARY_PATH = "$CONDA_PREFIX/lib/python3.12/site-packages/isaacsim/exts/isaacsim.ros2.core/jazzy/lib:$PIXI_PROJECT_ROOT/.pixi/xml2-legacy-libs:$LD_LIBRARY_PATH"
 QT_QPA_PLATFORM = "xcb"
 
+# 升級isaacsim時, 確認是否還需要舊版本libxml2的workaround, 詳見stage-libxml2-legacy.sh
 [feature.xml2-legacy.dependencies]
 libxml2 = "2.13.*"
 
@@ -53,12 +55,17 @@ xml2-legacy = { features = ["xml2-legacy"], no-default-feature = true }
 [pypi-options]
 prerelease-mode = "allow"
 
+# 升級isaacsim時, 不要使用isaacsim指定的版本, 而是以ros要的版本為主,
+# 因為ros可能有C語言API的相依性, 而isaac只會有python api的相依性
 [pypi-options.dependency-overrides]
 opencv-python-headless-noffmpeg = ">=4.14"
 
+# 升級isaacsim時, 重新確認isaacsim是否還是綁定noffmpeg這個nvidia自己編譯的版本, 並不要使用isaacsim指定的版本, 而是ros要的版本
 [workspace.conda-pypi-map]
 conda-forge = { mapping = { py-opencv = ["opencv-python", "opencv-python-headless", "opencv-python-headless-noffmpeg"] } }
 
 [pypi-dependencies]
 isaacsim = { version = "==6.2.0.0", extras = ["all", "extscache"], index = "https://pypi.nvidia.com" }
+# 升級isaacsim時, 重新確認isaacsim使用的pytorch是否有升級
+# https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_python.html 
 torch = { version = "==2.11.0", index = "https://download.pytorch.org/whl/cu128" }
