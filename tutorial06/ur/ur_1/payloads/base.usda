@@ -4,7 +4,7 @@
         string creator = "URDF USD Converter v0.3.2"
     }
     defaultPrim = "ur"
-    doc = """Generated from Composed Stage of root layer /home/jeff/project/isaac-sim-proj2/tutorial06/ur/payloads/base.usd
+    doc = """Generated from Composed Stage of root layer /home/jeff/project/isaac-sim-practice/tutorial06/ur/ur_1/.asset-transformer-5kctt3kx/payloads/base.usd
 """
     endTimeCode = 1000000
     kilogramsPerUnit = 1
@@ -59,6 +59,9 @@ def Xform "ur" (
                             displayName = "eSeries UR10e.010"
                             instanceable = true
                             prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e010_sFY7>
+                            uiHints = {
+                                string displayName = "eSeries UR10e.010"
+                            }
                         )
                         {
                             quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -71,6 +74,9 @@ def Xform "ur" (
                             displayName = "eSeries UR10e.043"
                             instanceable = true
                             prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e043_sFY7>
+                            uiHints = {
+                                string displayName = "eSeries UR10e.043"
+                            }
                         )
                         {
                             quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -98,6 +104,9 @@ def Xform "ur" (
                                 displayName = "eSeries UR10e.023"
                                 instanceable = true
                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e023_sFY7>
+                                uiHints = {
+                                    string displayName = "eSeries UR10e.023"
+                                }
                             )
                             {
                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -110,6 +119,9 @@ def Xform "ur" (
                                 displayName = "eSeries UR10e.044"
                                 instanceable = true
                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e044_sFY7>
+                                uiHints = {
+                                    string displayName = "eSeries UR10e.044"
+                                }
                             )
                             {
                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -122,6 +134,9 @@ def Xform "ur" (
                                 displayName = "eSeries UR10e.045"
                                 instanceable = true
                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e045_sFY7>
+                                uiHints = {
+                                    string displayName = "eSeries UR10e.045"
+                                }
                             )
                             {
                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -149,6 +164,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.028"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e028_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.028"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -161,6 +179,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.046"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e046_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.046"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -173,6 +194,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.047"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e047_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.047"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -185,6 +209,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.049"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e049_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.049"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -197,6 +224,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.050"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e050_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.050"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -209,6 +239,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.051"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e051_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.051"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -221,6 +254,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.052"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e052_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.052"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -233,6 +269,9 @@ def Xform "ur" (
                                     displayName = "eSeries UR10e.053"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e053_sFY7>
+                                    uiHints = {
+                                        string displayName = "eSeries UR10e.053"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -260,6 +299,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.031"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e031_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.031"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -272,6 +314,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.054"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e054_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.054"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -284,6 +329,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.055"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e055_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.055"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -296,6 +344,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.056"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e056_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.056"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -308,6 +359,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.057"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e057_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.057"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -320,6 +374,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.058"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e058_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.058"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -332,6 +389,9 @@ def Xform "ur" (
                                         displayName = "eSeries UR10e.059"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e059_sFY7>
+                                        uiHints = {
+                                            string displayName = "eSeries UR10e.059"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -359,6 +419,9 @@ def Xform "ur" (
                                             displayName = "eSeries UR10e.037"
                                             instanceable = true
                                             prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e037_sFY7>
+                                            uiHints = {
+                                                string displayName = "eSeries UR10e.037"
+                                            }
                                         )
                                         {
                                             quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -371,6 +434,9 @@ def Xform "ur" (
                                             displayName = "eSeries UR10e.060"
                                             instanceable = true
                                             prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e060_sFY7>
+                                            uiHints = {
+                                                string displayName = "eSeries UR10e.060"
+                                            }
                                         )
                                         {
                                             quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -383,6 +449,9 @@ def Xform "ur" (
                                             displayName = "eSeries UR10e.061"
                                             instanceable = true
                                             prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e061_sFY7>
+                                            uiHints = {
+                                                string displayName = "eSeries UR10e.061"
+                                            }
                                         )
                                         {
                                             quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -410,6 +479,9 @@ def Xform "ur" (
                                                 displayName = "eSeries UR10e.040"
                                                 instanceable = true
                                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e040_sFY7>
+                                                uiHints = {
+                                                    string displayName = "eSeries UR10e.040"
+                                                }
                                             )
                                             {
                                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -422,6 +494,9 @@ def Xform "ur" (
                                                 displayName = "eSeries UR10e.062"
                                                 instanceable = true
                                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e062_sFY7>
+                                                uiHints = {
+                                                    string displayName = "eSeries UR10e.062"
+                                                }
                                             )
                                             {
                                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -434,6 +509,9 @@ def Xform "ur" (
                                                 displayName = "eSeries UR10e.063"
                                                 instanceable = true
                                                 prepend references = @./instances.usda@</Instances/tn__eSeriesUR10e063_sFY7>
+                                                uiHints = {
+                                                    string displayName = "eSeries UR10e.063"
+                                                }
                                             )
                                             {
                                                 quatd xformOp:orient = (1.152022691e-7, 1.152022691e-7, -0.7071067691, -0.7071067691)
@@ -465,6 +543,9 @@ def Xform "ur" (
                                                 displayName = "wrist3"
                                                 instanceable = true
                                                 prepend references = @./instances.usda@</Instances/wrist3_1>
+                                                uiHints = {
+                                                    string displayName = "wrist3"
+                                                }
                                             )
                                             {
                                                 quatd xformOp:orient = (0.7071067691, 0.7071067691, 0, 0)
@@ -502,6 +583,9 @@ def Xform "ur" (
                                             displayName = "wrist2"
                                             instanceable = true
                                             prepend references = @./instances.usda@</Instances/wrist2_1>
+                                            uiHints = {
+                                                string displayName = "wrist2"
+                                            }
                                         )
                                         {
                                             quatd xformOp:orient = (1, 0, 0, 0)
@@ -515,6 +599,9 @@ def Xform "ur" (
                                         displayName = "wrist1"
                                         instanceable = true
                                         prepend references = @./instances.usda@</Instances/wrist1_1>
+                                        uiHints = {
+                                            string displayName = "wrist1"
+                                        }
                                     )
                                     {
                                         quatd xformOp:orient = (0.7071067691, 0.7071067691, 0, 0)
@@ -528,6 +615,9 @@ def Xform "ur" (
                                     displayName = "forearm"
                                     instanceable = true
                                     prepend references = @./instances.usda@</Instances/forearm_1>
+                                    uiHints = {
+                                        string displayName = "forearm"
+                                    }
                                 )
                                 {
                                     quatd xformOp:orient = (0.5, 0.5, -0.5, -0.5)
@@ -541,6 +631,9 @@ def Xform "ur" (
                                 displayName = "upperarm"
                                 instanceable = true
                                 prepend references = @./instances.usda@</Instances/upperarm_1>
+                                uiHints = {
+                                    string displayName = "upperarm"
+                                }
                             )
                             {
                                 quatd xformOp:orient = (0.5, 0.5, -0.5, -0.5)
@@ -554,6 +647,9 @@ def Xform "ur" (
                             displayName = "shoulder"
                             instanceable = true
                             prepend references = @./instances.usda@</Instances/shoulder_1>
+                            uiHints = {
+                                string displayName = "shoulder"
+                            }
                         )
                         {
                             quatd xformOp:orient = (0, 0, 0, 1)
@@ -567,6 +663,9 @@ def Xform "ur" (
                         displayName = "base"
                         instanceable = true
                         prepend references = @./instances.usda@</Instances/base_1>
+                        uiHints = {
+                            string displayName = "base"
+                        }
                     )
                     {
                         quatd xformOp:orient = (0, 0, 0, 1)

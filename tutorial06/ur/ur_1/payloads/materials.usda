@@ -14,7 +14,7 @@ def Scope "Materials"
 {
     def Material "JointGrey"
     {
-        color3f inputs:diffuseColor = (0.06301003, 0.06301003, 0.06301003)
+        color3f inputs:diffuseColor = (0.06301002, 0.06301003, 0.06301002)
         float inputs:metallic = 0
         float inputs:opacity = 1
         float inputs:roughness = 0.5
@@ -22,7 +22,6 @@ def Scope "Materials"
         token outputs:displacement (
             displayGroup = "Outputs"
         )
-        prepend token outputs:displacement.connect = </Materials/JointGrey/PreviewSurface.outputs:displacement>
         token outputs:surface (
             displayGroup = "Outputs"
         )
@@ -40,14 +39,13 @@ def Scope "Materials"
             prepend float inputs:metallic.connect = </Materials/JointGrey.inputs:metallic>
             prepend float inputs:opacity.connect = </Materials/JointGrey.inputs:opacity>
             prepend float inputs:roughness.connect = </Materials/JointGrey.inputs:roughness>
-            token outputs:displacement
             token outputs:surface
         }
     }
 
     def Material "Black"
     {
-        color3f inputs:diffuseColor = (0.0025621112, 0.0025621112, 0.0025621112)
+        color3f inputs:diffuseColor = (0.0025614745, 0.0025614747, 0.0025614745)
         float inputs:metallic = 0
         float inputs:opacity = 1
         float inputs:roughness = 0.5
@@ -55,7 +53,6 @@ def Scope "Materials"
         token outputs:displacement (
             displayGroup = "Outputs"
         )
-        prepend token outputs:displacement.connect = </Materials/Black/PreviewSurface.outputs:displacement>
         token outputs:surface (
             displayGroup = "Outputs"
         )
@@ -73,14 +70,13 @@ def Scope "Materials"
             prepend float inputs:metallic.connect = </Materials/Black.inputs:metallic>
             prepend float inputs:opacity.connect = </Materials/Black.inputs:opacity>
             prepend float inputs:roughness.connect = </Materials/Black.inputs:roughness>
-            token outputs:displacement
             token outputs:surface
         }
     }
 
     def Material "URBlue"
     {
-        color3f inputs:diffuseColor = (0.20507877, 0.41788515, 0.6038274)
+        color3f inputs:diffuseColor = (0.20507874, 0.41788515, 0.60382736)
         float inputs:metallic = 0
         float inputs:opacity = 1
         float inputs:roughness = 0.5
@@ -88,7 +84,6 @@ def Scope "Materials"
         token outputs:displacement (
             displayGroup = "Outputs"
         )
-        prepend token outputs:displacement.connect = </Materials/URBlue/PreviewSurface.outputs:displacement>
         token outputs:surface (
             displayGroup = "Outputs"
         )
@@ -106,14 +101,13 @@ def Scope "Materials"
             prepend float inputs:metallic.connect = </Materials/URBlue.inputs:metallic>
             prepend float inputs:opacity.connect = </Materials/URBlue.inputs:opacity>
             prepend float inputs:roughness.connect = </Materials/URBlue.inputs:roughness>
-            token outputs:displacement
             token outputs:surface
         }
     }
 
     def Material "LinkGrey"
     {
-        color3f inputs:diffuseColor = (0.6389701, 0.6389701, 0.6389701)
+        color3f inputs:diffuseColor = (0.63897, 0.6389701, 0.63897)
         float inputs:metallic = 0
         float inputs:opacity = 1
         float inputs:roughness = 0.5
@@ -121,7 +115,6 @@ def Scope "Materials"
         token outputs:displacement (
             displayGroup = "Outputs"
         )
-        prepend token outputs:displacement.connect = </Materials/LinkGrey/PreviewSurface.outputs:displacement>
         token outputs:surface (
             displayGroup = "Outputs"
         )
@@ -139,7 +132,6 @@ def Scope "Materials"
             prepend float inputs:metallic.connect = </Materials/LinkGrey.inputs:metallic>
             prepend float inputs:opacity.connect = </Materials/LinkGrey.inputs:opacity>
             prepend float inputs:roughness.connect = </Materials/LinkGrey.inputs:roughness>
-            token outputs:displacement
             token outputs:surface
         }
     }

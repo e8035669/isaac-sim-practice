@@ -106,7 +106,7 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0.7392859
+            float drive:angular:physics:damping = 36.964294
             float drive:angular:physics:maxForce = 330
             float drive:angular:physics:stiffness = 696.76056
             token drive:angular:physics:type = "force"
@@ -133,9 +133,9 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0
+            float drive:angular:physics:damping = 522.1134
             float drive:angular:physics:maxForce = 330
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness = 9841.605
             token drive:angular:physics:type = "force"
             float newton:velocityLimit = 120
             uniform token physics:axis = "Z"
@@ -160,9 +160,9 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0
+            float drive:angular:physics:damping = 6666.9775
             float drive:angular:physics:maxForce = 150
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness = 125669.56
             token drive:angular:physics:type = "force"
             float newton:velocityLimit = 180
             uniform token physics:axis = "Z"
@@ -187,9 +187,9 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0
+            float drive:angular:physics:damping = 166.3353
             float drive:angular:physics:maxForce = 54
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness = 3135.3464
             token drive:angular:physics:type = "force"
             float newton:velocityLimit = 180
             uniform token physics:axis = "Z"
@@ -214,9 +214,9 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0
+            float drive:angular:physics:damping = 38.006897
             float drive:angular:physics:maxForce = 54
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness = 716.4131
             token drive:angular:physics:type = "force"
             float newton:velocityLimit = 180
             uniform token physics:axis = "Z"
@@ -241,9 +241,9 @@ over "ur"
             prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 0
+            float drive:angular:physics:damping = 2.7165296
             float drive:angular:physics:maxForce = 54
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness = 51.205376
             token drive:angular:physics:type = "force"
             float newton:velocityLimit = 180
             uniform token physics:axis = "Z"
