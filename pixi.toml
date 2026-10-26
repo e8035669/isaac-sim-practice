@@ -6,6 +6,7 @@ platforms = [{ name = "linux-64-glibc-2-35", platform = "linux-64", glibc = "2.3
 version = "0.1.0"
 
 [tasks]
+isaac-streaming = "isaacsim isaacsim.exp.full.streaming --no-window"
 
 [dependencies]
 python = "3.12.*"
