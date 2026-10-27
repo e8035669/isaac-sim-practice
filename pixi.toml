@@ -6,9 +6,9 @@ platforms = [{ name = "linux-64-glibc-2-35", platform = "linux-64", glibc = "2.3
 version = "0.1.0"
 
 [tasks]
-isaac-streaming = "isaacsim isaacsim.exp.full.streaming --no-window --/exts/omni.kit.livestream.app/primaryStream/targetFps=30 --/app/window/dpiScaleOverride=1.5"
+isaac-streaming = "isaacsim isaacsim.exp.full.streaming --no-window --/exts/omni.kit.livestream.app/primaryStream/targetFps=30 --/app/window/dpiScaleOverride=2.0"
 # 同isaac-streaming, 但開啟StreamSDK的log, 可在kit log中看到codec協商過程
-isaac-streaming-debug = "isaacsim isaacsim.exp.full.streaming --no-window --/exts/omni.kit.livestream.app/primaryStream/targetFps=30 --/log/channels/omni.kit.livestream.streamsdk=verbose --/app/window/dpiScaleOverride=1.5"
+isaac-streaming-debug = "isaacsim isaacsim.exp.full.streaming --no-window --/exts/omni.kit.livestream.app/primaryStream/targetFps=30 --/log/channels/omni.kit.livestream.streamsdk=verbose --/app/window/dpiScaleOverride=2.0"
 
 [dependencies]
 python = "3.12.*"
