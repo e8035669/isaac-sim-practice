@@ -27,15 +27,10 @@ RUN grep -qF "signalingServer: '127.0.0.1'," src/main.tsx \
     && grep -qF "signalingPort: ${ISAACSIM_SIGNAL_PORT}," src/main.tsx \
     && grep -qF "mediaPort: ${ISAACSIM_STREAM_PORT}," src/main.tsx
 
-# Patch stream config: preferred codec, AV1, fit stream resolution to the page, stats overlay.
+# Patch stream config: fit stream resolution to the page.
 # width/height act as the maximum stream resolution when fitStreamResolution is enabled.
-ARG VIDEO_CODEC=AV1
-ENV VITE_VIDEO_CODEC=${VIDEO_CODEC}
-COPY stats-overlay.ts src/stats-overlay.ts
-COPY codec-query.ts src/codec-query.ts
 RUN grep -qF "signalingServer:" src/main.tsx \
-    && sed -i "1i import './codec-query';\nimport { VideoCodec } from '@nvidia/ov-web-rtc';\nimport { reportStats } from './stats-overlay';" src/main.tsx \
-    && sed -i "/signalingServer:/a\\    codec: VideoCodec.${VIDEO_CODEC},\n    enableAV1Support: true,\n    fitStreamResolution: true,\n    onStreamStats: reportStats," src/main.tsx \
+    && sed -i "/signalingServer:/a\\    fitStreamResolution: true," src/main.tsx \
     && sed -i -E "s/^(\s*)width: [0-9]+,/\1width: 3840,/; s/^(\s*)height: [0-9]+,/\1height: 2160,/" src/main.tsx \
     && grep -qF "width: 3840," src/main.tsx \
     && grep -qF "height: 2160," src/main.tsx
