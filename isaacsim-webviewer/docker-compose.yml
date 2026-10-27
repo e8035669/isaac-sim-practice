@@ -40,6 +40,7 @@ services:
         ISAACSIM_HOST: ${ISAACSIM_HOST:-127.0.0.1}
         ISAACSIM_SIGNAL_PORT: ${ISAACSIM_SIGNAL_PORT:-49100}
         ISAACSIM_STREAM_PORT: ${ISAACSIM_STREAM_PORT:-47998}
+        VIDEO_CODEC: ${VIDEO_CODEC:-AV1}
     network_mode: "host"
     command: ["npx", "vite", "preview", "--host", "--port", "${WEB_VIEWER_PORT:-8210}"]
     healthcheck:
